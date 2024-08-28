@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import { SafeAreaView, Alert } from "react-native";
+import { View, SafeAreaView, Alert } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import { useUser } from "./userContext";
 import { WebView } from "react-native-webview";
@@ -33,6 +33,7 @@ export default function WebViewScreen({ initialUrl, requireLogin }) {
           style={{ flex: 1 }}
           onNavigationStateChange={handleNavigationChange}
         />
+        <View style={{ padding: 10, backgroundColor: "white" }}></View>
       </SafeAreaView>
     </SafeAreaView>
   );

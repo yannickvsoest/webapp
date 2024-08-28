@@ -1,11 +1,11 @@
 import { Tabs } from "expo-router";
-import React, { useState } from "react";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
+        tabBarInactiveTintColor: "#5918e9",
         tabBarActiveTintColor: "#5918e9",
         tabBarStyle: {
           backgroundColor: "white",
